@@ -382,11 +382,11 @@ const categories: Category[] = [
     icon: <Martini className="w-4 h-4" />,
     accentColor: "#FB923C",
     items: [
-      { name: "RASPBERRY SPRITZ", price: "€ 8,00", image: null },
-      { name: "APEROL SPRITZ", price: "€ 8,00", image: null },
-      { name: "CAMPARI SPRITZ", price: "€ 8,00", image: null },
-      { name: "LIMONCELLO SPRITZ", price: "€ 8,00", image: null },
-      { name: "HUGO", price: "€ 8,00", image: null },
+      { name: "RASPBERRY SPRITZ", price: "€ 8,00", image: "/menu/spritz/raspberry-spritz.png" },
+      { name: "APEROL SPRITZ", price: "€ 8,00", image: "/menu/spritz/aperol-spritz.png" },
+      { name: "CAMPARI SPRITZ", price: "€ 8,00", image: "/menu/spritz/campari-spritz.png" },
+      { name: "LIMONCELLO SPRITZ", price: "€ 8,00", image: "/menu/spritz/limoncello-spritz.png" },
+      { name: "HUGO", price: "€ 8,00", image: "/menu/spritz/hugo.png" },
     ],
   },
   {
