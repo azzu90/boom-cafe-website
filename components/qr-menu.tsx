@@ -76,7 +76,7 @@ const categories: Category[] = [
       { name: "Bijela kava - zamjensko mlijeko", size: "šal./cup", price: "€ 3,40", image: "/menu/kava/bijela-kava.png" },
       { name: "Čaj (med-limun)", size: "šal./cup", price: "€ 3,00", image: null },
       { name: "Nescafe", size: "šal./cup", price: "€ 3,20", image: null },
-      { name: "Ledena kava", size: "šal./cup", price: "€ 3,50", image: null },
+      { name: "Ledena kava", size: "šal./cup", price: "€ 3,50", image: "/menu/kava/ledena-kava.png" },
       { name: "Kit-Kat Kakao", size: "šal./cup", price: "€ 3,20", image: null },
       { name: "Kakao", size: "šal./cup", price: "€ 3,20", image: null },
       { name: "Vruća čokolada", size: "šal./cup", price: "€ 4,00", image: null },
