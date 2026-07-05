@@ -693,7 +693,7 @@ export function QRMenu() {
       <div 
         ref={stickyHeaderRef} 
         className="sticky top-0 z-50 border-b border-border"
-        style={{ maxHeight: "120px", backgroundColor: "#14110D" }}
+        style={{ backgroundColor: "#14110D" }}
       >
         {/* Top bar */}
         <div className="px-4 py-3 flex items-center justify-between gap-4 max-w-full">
