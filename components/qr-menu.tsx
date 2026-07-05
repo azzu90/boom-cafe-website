@@ -76,7 +76,7 @@ const categories: Category[] = [
       { name: "Bijela kava - zamjensko mlijeko", size: "šal./cup", price: "€ 3,40", image: "/menu/kava/bijela-kava.png" },
       { name: "Čaj (med-limun)", size: "šal./cup", price: "€ 3,00", image: null },
       { name: "Nescafe", size: "šal./cup", price: "€ 3,20", image: null },
-      { name: "Ledena kava", size: "šal./cup", price: "€ 3,50", image: null },
+      { name: "Ledena kava", size: "šal./cup", price: "€ 3,50", image: "/menu/kava/ledena-kava.png" },
       { name: "Kit-Kat Kakao", size: "šal./cup", price: "€ 3,20", image: null },
       { name: "Kakao", size: "šal./cup", price: "€ 3,20", image: null },
       { name: "Vruća čokolada", size: "šal./cup", price: "€ 4,00", image: null },
@@ -364,14 +364,14 @@ const categories: Category[] = [
     icon: <Martini className="w-4 h-4" />,
     accentColor: "#FACC15",
     items: [
-      { name: "Amaretto Sour", price: "€ 11,00", image: null },
-      { name: "Antique Sour", price: "€ 9,00", image: null },
-      { name: "Aperol Sour", price: "€ 9,00", image: null },
-      { name: "Gin Sour", price: "€ 9,00", image: null },
-      { name: "Rum Sour", price: "€ 9,00", image: null },
-      { name: "Teranino Sour", price: "€ 9,00", image: null },
-      { name: "Vodka Sour", price: "€ 9,00", image: null },
-      { name: "Whiskey Sour", price: "€ 9,00", image: null },
+      { name: "Amaretto Sour", price: "€ 11,00", image: "/menu/kokteli/amaretto-sour.png" },
+      { name: "Antique Sour", price: "€ 9,00", image: "/menu/kokteli/antique-sour.png" },
+      { name: "Aperol Sour", price: "€ 9,00", image: "/menu/kokteli/aperol-sour.png" },
+      { name: "Gin Sour", price: "€ 9,00", image: "/menu/kokteli/gin-sour.png" },
+      { name: "Rum Sour", price: "€ 9,00", image: "/menu/kokteli/rum-sour.png" },
+      { name: "Teranino Sour", price: "€ 9,00", image: "/menu/kokteli/teranino-sour.png" },
+      { name: "Vodka Sour", price: "€ 9,00", image: "/menu/kokteli/vodka-sour.png" },
+      { name: "Whiskey Sour", price: "€ 9,00", image: "/menu/kokteli/whiskey-sour.png" },
     ],
   },
   {
@@ -382,11 +382,11 @@ const categories: Category[] = [
     icon: <Martini className="w-4 h-4" />,
     accentColor: "#FB923C",
     items: [
-      { name: "RASPBERRY SPRITZ", price: "€ 8,00", image: null },
-      { name: "APEROL SPRITZ", price: "€ 8,00", image: null },
-      { name: "CAMPARI SPRITZ", price: "€ 8,00", image: null },
-      { name: "LIMONCELLO SPRITZ", price: "€ 8,00", image: null },
-      { name: "HUGO", price: "€ 8,00", image: null },
+      { name: "RASPBERRY SPRITZ", price: "€ 8,00", image: "/menu/spritz/raspberry-spritz.png" },
+      { name: "APEROL SPRITZ", price: "€ 8,00", image: "/menu/spritz/aperol-spritz.png" },
+      { name: "CAMPARI SPRITZ", price: "€ 8,00", image: "/menu/spritz/campari-spritz.png" },
+      { name: "LIMONCELLO SPRITZ", price: "€ 8,00", image: "/menu/spritz/limoncello-spritz.png" },
+      { name: "HUGO", price: "€ 8,00", image: "/menu/spritz/hugo.png" },
     ],
   },
   {
@@ -693,7 +693,7 @@ export function QRMenu() {
       <div 
         ref={stickyHeaderRef} 
         className="sticky top-0 z-50 border-b border-border"
-        style={{ maxHeight: "120px", backgroundColor: "#14110D" }}
+        style={{ backgroundColor: "#14110D" }}
       >
         {/* Top bar */}
         <div className="px-4 py-3 flex items-center justify-between gap-4 max-w-full">
