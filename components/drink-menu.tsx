@@ -117,13 +117,8 @@ export function DrinkMenu() {
                     <div className="flex flex-col items-end text-right">
                       <span className="font-bold text-neutral-900 min-w-[4rem] text-right leading-6">{item.price}</span>
                       <span className="text-[11px] leading-tight text-muted-foreground">
-                        <span className="sm:hidden">
-                          <span className="block whitespace-nowrap">{item.referenceDate}.</span>
-                          <span className="block whitespace-nowrap">{item.referencePrice}</span>
-                        </span>
-                        <span className="hidden sm:inline whitespace-nowrap">
-                          Cijena na {item.referenceDate}.: {item.referencePrice}
-                        </span>
+                        <span className="block whitespace-nowrap">{item.referenceDate}.</span>
+                        <span className="block whitespace-nowrap">{item.referencePrice}</span>
                       </span>
                     </div>
                   </div>
