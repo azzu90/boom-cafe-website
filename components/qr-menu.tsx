@@ -629,7 +629,7 @@ export function QRMenu() {
       },
       {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
-        rootMargin: "-120px 0px -60% 0px",
+        rootMargin: `-${(stickyHeaderRef.current?.offsetHeight || 120) + 8}px 0px -60% 0px`,
       },
     )
 
@@ -654,8 +654,7 @@ export function QRMenu() {
       
       // Scroll to top of content area
       if (contentRef.current) {
-        const headerHeight = stickyHeaderRef.current?.offsetHeight || 0
-        window.scrollTo({ top: headerHeight - 20, behavior: "smooth" })
+        window.scrollTo({ top: 0, behavior: "smooth" })
       }
 
       // Reset animation state
