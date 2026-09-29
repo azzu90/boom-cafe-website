@@ -108,7 +108,13 @@ function CardItem({ item, category }: { item: DrinkItem; category: Category }) {
   {item.price}
   </div>
   <div className="text-[11px] leading-tight text-muted-foreground text-left">
-    Cijena na {item.referenceDate}.: {item.referencePrice}
+    <span className="sm:hidden">
+      <span className="block whitespace-nowrap">{item.referenceDate}.</span>
+      <span className="block whitespace-nowrap">{item.referencePrice}</span>
+    </span>
+    <span className="hidden sm:inline whitespace-nowrap">
+      Cijena na {item.referenceDate}.: {item.referencePrice}
+    </span>
   </div>
   </div>
     </div>
@@ -133,12 +139,18 @@ function ListItem({ item, category }: { item: DrinkItem; category: Category }) {
           <div className="text-sm text-muted-foreground mt-0.5 leading-snug line-clamp-1">{item.note}</div>
         )}
       </div>
-      <div className="w-[80px] text-right flex-shrink-0">
+      <div className="w-[80px] sm:w-auto text-right flex-shrink-0">
         <div className="text-base font-bold tabular-nums" style={{ color: category.accentColor }}>
           {item.price}
         </div>
-        <div className="text-[11px] leading-tight text-muted-foreground break-words">
-          Cijena na {item.referenceDate}.: {item.referencePrice}
+        <div className="text-[11px] leading-tight text-muted-foreground">
+          <span className="sm:hidden">
+            <span className="block whitespace-nowrap">{item.referenceDate}.</span>
+            <span className="block whitespace-nowrap">{item.referencePrice}</span>
+          </span>
+          <span className="hidden sm:inline whitespace-nowrap">
+            Cijena na {item.referenceDate}.: {item.referencePrice}
+          </span>
         </div>
       </div>
     </div>
@@ -328,6 +340,9 @@ export function QRMenu() {
         }`}
         style={{ zIndex: 1 }}
       >
+        <p className="text-xs text-muted-foreground mb-3">
+          Manji iznos ispod cijene = cijena na dan 10.09.2026.
+        </p>
         {visibleCategories.map((category) => {
           const isCardLayout = cardCategories.includes(category.id)
           const isAlcoholic = alcoholicCategories.includes(category.id)

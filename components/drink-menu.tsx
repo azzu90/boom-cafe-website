@@ -36,6 +36,9 @@ export function DrinkMenu() {
 
   return (
     <div className="max-w-6xl mx-auto">
+      <p className="text-xs text-muted-foreground mb-4">
+        Manji iznos ispod cijene = cijena na dan 10.09.2026.
+      </p>
       {/* Category Navigation */}
       <div className="mb-8 -mx-4 px-4 md:mx-0 md:px-0">
         <div className="relative">
@@ -114,7 +117,13 @@ export function DrinkMenu() {
                     <div className="flex flex-col items-end text-right">
                       <span className="font-bold text-neutral-900 min-w-[4rem] text-right leading-6">{item.price}</span>
                       <span className="text-[11px] leading-tight text-muted-foreground">
-                        Cijena na {item.referenceDate}.: {item.referencePrice}
+                        <span className="sm:hidden">
+                          <span className="block whitespace-nowrap">{item.referenceDate}.</span>
+                          <span className="block whitespace-nowrap">{item.referencePrice}</span>
+                        </span>
+                        <span className="hidden sm:inline whitespace-nowrap">
+                          Cijena na {item.referenceDate}.: {item.referencePrice}
+                        </span>
                       </span>
                     </div>
                   </div>
