@@ -29,9 +29,6 @@ export const metadata: Metadata = {
   description:
     "Premium coffee shop and cocktail bar in the heart of Zagreb. Enjoy artisan coffee by day and craft cocktails by night at Preradovićeva ulica 4.",
   keywords: "coffee shop, cocktail bar, Zagreb, Preradovićeva, cafe, bar, drinks",
-  icons: {
-    icon: "/favicon.ico",
-  },
     generator: 'v0.app'
 }
 
