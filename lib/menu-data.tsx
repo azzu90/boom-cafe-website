@@ -211,9 +211,9 @@ export const categories: Category[] = [
     icon: <Wine className="w-4 h-4" />,
     accentColor: "#A855F7",
     items: [
-      { name: "Josić Graševina", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Coronica Malvazija", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Josić Cuvee", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: null },
+      { name: "Josić Graševina", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: "/menu/vino/josic-grasevina.webp" },
+      { name: "Coronica Malvazija", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: "/menu/vino/coronica-malvazija.webp" },
+      { name: "Josić Cuvee", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: "/menu/vino/josic-cuvee.webp" },
       { name: "Muškat", size: "0,75 l", price: "€ 37,00", referencePrice: "€ 37,00", referenceDate: REFERENCE_DATE, image: null },
     ],
   },
@@ -225,11 +225,11 @@ export const categories: Category[] = [
     icon: <Wine className="w-4 h-4" />,
     accentColor: "#EC4899",
     items: [
-      { name: "Josić Graševina", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Coronica Malvazija", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Josić Cuvee", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: null },
+      { name: "Josić Graševina", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: "/menu/vino/glas-bijelo.webp" },
+      { name: "Coronica Malvazija", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: "/menu/vino/glas-bijelo.webp" },
+      { name: "Josić Cuvee", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: "/menu/vino/glas-crno.webp" },
       { name: "Muškat", size: "0,10 l", price: "€ 5,20", referencePrice: "€ 5,20", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Gemišt", size: "0,20 l", price: "€ 5,50", referencePrice: "€ 5,50", referenceDate: REFERENCE_DATE, image: null },
+      { name: "Gemišt", size: "0,20 l", price: "€ 5,50", referencePrice: "€ 5,50", referenceDate: REFERENCE_DATE, image: "/menu/vino/glas-bijelo.webp" },
     ],
   },
   {
