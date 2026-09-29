@@ -400,6 +400,17 @@ export function QRMenu() {
           </p>
           <p>Informacije o podnošenju prigovora nalaze se na šanku.</p>
         </div>
+        <div className="pt-2 text-center">
+          <a
+            href="https://mirano-solutions.com/?utm_source=boom-bar.eu&utm_medium=referral&utm_campaign=footer_credit&utm_content=powered_by"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 opacity-50 hover:opacity-70 transition-opacity"
+          >
+            <span className="text-sm">developed by</span>
+            <Image src="/mirano-logo.svg" alt="Mirano Solutions" width={480} height={120} className="h-24 w-auto" />
+          </a>
+        </div>
       </div>
     </div>
   )
