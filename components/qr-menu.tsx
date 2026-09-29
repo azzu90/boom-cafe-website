@@ -21,13 +21,13 @@ function slugify(name: string): string {
 
 // Skeleton loader for images
   function ImageSkeleton({ size }: { size: "small" | "large" }) {
-    const sizeClasses = size === "large" ? "w-full aspect-[4/3]" : "w-20 h-20"
+    const sizeClasses = size === "large" ? "w-full aspect-square" : "w-20 h-20"
   return <div className={`${sizeClasses} rounded-md bg-muted animate-pulse flex-shrink-0`} />
 }
 
 // Placeholder component for items without images
   function ImagePlaceholder({ icon, accentColor, size }: { icon: React.ReactNode; accentColor: string; size: "small" | "large" }) {
-    const sizeClasses = size === "large" ? "w-full aspect-[4/3]" : "w-20 h-20"
+    const sizeClasses = size === "large" ? "w-full aspect-square" : "w-20 h-20"
   
   return (
     <div
@@ -56,12 +56,12 @@ function DrinkImage({ src, alt, size, icon, accentColor }: {
     return <ImagePlaceholder icon={icon} accentColor={accentColor} size={size} />
   }
 
-  const sizeClasses = size === "large" ? "w-full aspect-[4/3]" : "w-20 h-20"
+  const sizeClasses = size === "large" ? "w-full aspect-square" : "w-20 h-20"
 
   return (
     <div 
       className={`relative ${sizeClasses} rounded-md overflow-hidden flex-shrink-0`}
-      style={{ backgroundColor: "#14110D" }}
+      style={{ backgroundColor: "#000000" }}
     >
       {isLoading && (
         <div className="absolute inset-0 bg-muted animate-pulse" />
