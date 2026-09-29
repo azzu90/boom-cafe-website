@@ -569,7 +569,7 @@ function ListItem({ item, category }: { item: DrinkItem; category: Category }) {
         <div className="text-base font-medium text-foreground leading-snug break-words">{item.name}</div>
         {item.size && <div className="text-sm text-muted-foreground mt-0.5 leading-none">{item.size}</div>}
         {item.note && (
-          <div className="text-sm text-muted-foreground mt-0.5 leading-none line-clamp-1">{item.note}</div>
+          <div className="text-sm text-muted-foreground mt-0.5 leading-snug line-clamp-1">{item.note}</div>
         )}
       </div>
       <div 
@@ -733,37 +733,6 @@ export function QRMenu() {
           </div>
         </div>
 
-        {/* Section Title - shows the active group's main category title */}
-        {(() => {
-          const activeGroupData = mainGroups.find(g => g.id === activeGroup)
-          const firstCategory = visibleCategories[0]
-          if (!firstCategory) return null
-          
-          // Get a display title based on group
-          const groupTitles: Record<string, { hr: string, en: string }> = {
-            "kava": { hr: "Topli Napitci", en: "Hot Drinks" },
-            "sokovi": { hr: "Bezalkoholna Pića", en: "Soft Drinks & Juices" },
-            "pivo-vino": { hr: "Pivo & Vino", en: "Beer & Wine" },
-            "zestoka": { hr: "Žestoka Pića", en: "Spirits" },
-            "kokteli": { hr: "Kokteli", en: "Cocktails" },
-            "posebno": { hr: "Posebne Ponude", en: "Special Offers" },
-          }
-          const titles = groupTitles[activeGroup] || { hr: firstCategory.title, en: firstCategory.titleEn }
-          
-          return (
-            <div 
-              className="px-4 py-2 border-t border-border/30"
-              style={{ backgroundColor: "#14110D" }}
-            >
-              <div className="flex items-center gap-2">
-                <div className="text-accent">{activeGroupData?.icon}</div>
-                <h2 className="text-base font-bold text-foreground uppercase tracking-wide">{titles.hr}</h2>
-              </div>
-              <p className="text-xs text-muted-foreground font-serif ml-6">{titles.en}</p>
-            </div>
-          )
-        })()}
-
         {/* Level 2: Sub-category Chips */}
         {visibleCategories.length > 1 && (
           <div 
@@ -818,7 +787,7 @@ export function QRMenu() {
                   <div className="text-accent">{category.icon}</div>
                   <h2 className="text-lg font-bold text-foreground uppercase tracking-wide">{category.title}</h2>
                 </div>
-                <p className="text-xs text-muted-foreground font-serif mt-0.5 ml-6">
+                <p className="text-xs text-muted-foreground mt-0.5 ml-6">
                   {category.titleEn}
                 </p>
               </div>
