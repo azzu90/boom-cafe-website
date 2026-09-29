@@ -395,8 +395,7 @@ export function QRMenu() {
       <div className="px-4 pt-6 pb-6 text-center">
         <div className="text-xs text-muted-foreground/60 space-y-1.5">
           <p>
-            Sve cijene su izražene eurima. Obveznik nije u sustavu PDV-a, PDV nije obračunat na temelju čl. 90 st.1
-            Zakona o PDV-u.
+            Sve cijene su izražene u eurima i uključuju PDV.
           </p>
           <p>Informacije o podnošenju prigovora nalaze se na šanku.</p>
         </div>
