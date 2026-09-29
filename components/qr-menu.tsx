@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { track } from "@vercel/analytics"
+import { MiranoCredit } from "@/components/mirano-credit"
 import { categories, mainGroups, cardCategories, alcoholicCategories, type DrinkItem, type Category } from "@/lib/menu-data"
 
 // Helper function to convert item names to filename-safe slugs
@@ -399,6 +400,12 @@ export function QRMenu() {
             Zakona o PDV-u.
           </p>
           <p>Informacije o podnošenju prigovora nalaze se na šanku.</p>
+          <div className="flex justify-center pt-4">
+            <MiranoCredit
+              href="https://mirano-solutions.com/?utm_source=boom-bar.eu&utm_medium=referral&utm_campaign=footer_credit&utm_content=qr_page"
+              logoClassName="h-12 w-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
