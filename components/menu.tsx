@@ -17,8 +17,7 @@ export function Menu() {
           <p className="mb-2">Zabranjeno usluživanje alkoholnih pića osobama mlađim od 18 godina.</p>
           <p className="mb-2">Zabranjena je prodaja cigareta i duhanskih proizvoda maloljetnicima.</p>
           <p>
-            Sve cijene su izražene u eurima. Obveznik nije u sustavu PDV-a, PDV nije obračunat na temelju čl. 90 st.1
-            Zakona o PDV-u.
+            Sve cijene su izražene u eurima i uključuju PDV.
           </p>
         </div>
       </div>
