@@ -238,12 +238,16 @@ export function QRMenu() {
 
     const element = categoryRefs.current[categoryId]
     if (element) {
-      const headerHeight = stickyHeaderRef.current?.offsetHeight || 0
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY
-      window.scrollTo({
-        top: elementPosition - headerHeight - 16,
-        behavior: "smooth",
-      })
+      if (categoryId === currentGroup?.categoryIds[0]) {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      } else {
+        const headerHeight = stickyHeaderRef.current?.offsetHeight || 0
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY
+        window.scrollTo({
+          top: elementPosition - headerHeight - 16,
+          behavior: "smooth",
+        })
+      }
 
       setTimeout(() => {
         isScrollingRef.current = false
