@@ -47,6 +47,11 @@ export function Footer() {
                 <p>10 000 Zagreb</p>
               </a>
               <p>OIB: 04072113619</p>
+              <p>
+                <a href="/cjenik.csv" className="hover:text-accent transition-colors">
+                  Cjenik (CSV)
+                </a>
+              </p>
             </div>
           </div>
 
