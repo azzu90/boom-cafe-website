@@ -96,9 +96,9 @@ export const categories: Category[] = [
     icon: <Coffee className="w-4 h-4" />,
     accentColor: "#C4A574",
     items: [
-      { name: "Šlag", size: "šal./cup", price: "€ 1,50", referencePrice: "€ 1,50", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Med", size: "vreć./dose", price: "€ 0,50", referencePrice: "€ 0,50", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Mlijeko / milk", size: "šal./cup", price: "€ 1,00", referencePrice: "€ 1,00", referenceDate: REFERENCE_DATE, image: null },
+      { name: "Šlag", size: "šal./cup", price: "€ 1,50", referencePrice: "€ 1,50", referenceDate: REFERENCE_DATE, image: "/menu/kava/slag.webp" },
+      { name: "Med", size: "vreć./dose", price: "€ 0,50", referencePrice: "€ 0,50", referenceDate: REFERENCE_DATE, image: "/menu/kava/med.webp" },
+      { name: "Mlijeko / milk", size: "šal./cup", price: "€ 1,00", referencePrice: "€ 1,00", referenceDate: REFERENCE_DATE, image: "/menu/kava/mlijeko.webp" },
     ],
   },
   {
