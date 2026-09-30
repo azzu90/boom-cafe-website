@@ -240,10 +240,10 @@ export const categories: Category[] = [
     icon: <Sparkles className="w-4 h-4" />,
     accentColor: "#F472B6",
     items: [
-      { name: "Freixenet", size: "0,20 l", price: "€ 7,60", referencePrice: "€ 7,60", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Freixenet", size: "0,75 l", price: "€ 32,00", referencePrice: "€ 32,00", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Moet & Chandon", size: "0,75 l", price: "€ 125,00", referencePrice: "€ 125,00", referenceDate: REFERENCE_DATE, image: null },
-      { name: "Prosecco", size: "0,10 l", price: "€ 5,00", referencePrice: "€ 5,00", referenceDate: REFERENCE_DATE, image: null },
+      { name: "Freixenet", size: "0,20 l", price: "€ 7,60", referencePrice: "€ 7,60", referenceDate: REFERENCE_DATE, image: "/menu/pjenusci/freixenet-020.webp" },
+      { name: "Freixenet", size: "0,75 l", price: "€ 32,00", referencePrice: "€ 32,00", referenceDate: REFERENCE_DATE, image: "/menu/pjenusci/freixenet-075.webp" },
+      { name: "Moet & Chandon", size: "0,75 l", price: "€ 125,00", referencePrice: "€ 125,00", referenceDate: REFERENCE_DATE, image: "/menu/pjenusci/moet-chandon.webp" },
+      { name: "Prosecco", size: "0,10 l", price: "€ 5,00", referencePrice: "€ 5,00", referenceDate: REFERENCE_DATE, image: "/menu/pjenusci/prosecco.webp" },
     ],
   },
   {
